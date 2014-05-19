@@ -1,0 +1,41 @@
+<!doctype html>
+<html ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Visualization Methods</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link type="text/css" rel="stylesheet" href="http://cdn.staticfile.org/twitter-bootstrap/3.0.0/css/bootstrap-theme.min.css"/>
+    <link type="text/css" rel="stylesheet" href="http://cdn.staticfile.org/twitter-bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container" ng-controller="MainController">
+		<div class="row">
+			<h2>Data Visualization Methods</h2>
+			<span>form here</span>
+		</div>
+        <div class="row">
+			<div class="classification" ng-repeat="d in data">
+				<h3>{{ d.name }}</h3>
+				<p>{{ d.description }}</p>
+				<h4>Charts: </h4>
+				<ul>
+					<li ng-repeat="c in d.charts"><a href="#{{ c.name }}">{{ c.name }}</a></li>
+				</ul>
+				<div class="chart" ng-repeat="c in d.charts">
+					<h4 id="{{ c.name }}"><strong>Name</strong>: {{ c.name }}</h4>
+					<span ng-show="c['alt-name'].length != 0"><strong>Other name</strong>: {{ c['alt-name'].join(", ") }}</span>
+					<h5><strong>Visual Variables</strong>: {{ c['visual-variables'].join(', ') }}</h5>
+					<p><strong>Description</strong>: {{ c.description }}</p>
+					<img ng-src="{{ c.img }}" />
+
+				</div>
+			</div>
+		</div>
+    </div>
+    <script type="text/javascript" src="http://cdn.staticfile.org/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://cdn.staticfile.org/twitter-bootstrap/3.0.0/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="http://cdn.staticfile.org/angular.js/1.2.16/angular.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

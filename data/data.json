@@ -1,0 +1,425 @@
+[
+	{
+		"name": "Comparing categories",
+		"description": "To facilitate comparisons between the relative and absolute sizes of categorical values. The classic example would be the bar chart.",
+		"charts":[
+		{
+			"name": "Dot plot",
+			"alt-name": [],
+			"visual-variables": ["Position", "color-hue", "symbol"],
+			"categorical": 2,
+			"quantitative": 1,
+			"quantitative-ratio": 0,
+			"description": "A dot plot compares categorical variables by representing quantitative values with a single mark, such as a dot or symbol. The use of sorting helps you to clearly see the range and distribution of values. You can also combine multiple categorical value series on to the same chart distinguishing them using color or variation in symbol. Beyond two series things do start to get somewhat cluttered and hard to read.",
+			"img": "http://lyuehh-img.qiniudn.com/FlEqJol5KqCxDRC_UOQE3jYT6lbu"
+		},
+		{
+			"name": "Bar chart",
+			"alt-name": ["column chart"],
+			"visual-variables": ["Length/Height", "color-hue"],
+			"categorical": 1,
+			"quantitative-ratio": 1,
+			"description": "Bar charts convey data through the length or height of a bar, allowing us to draw accurate comparisons between categories for both relative and absolute values. When using length as the visual variable to represent a quantitative value it is important to show the full extent of this property so always start the bar from the zero point on the axis. The use of color can help draw attention to the values of specific categories in accordance with your narrative, as shown in the following screenshot:",
+			"img": "http://lyuehh-img.qiniudn.com/Fv3tvBHEihjNouN3roZkwgU113ky"
+		},
+		{
+			"name": "Floating bar",
+			"alt-name": ["Gantt chart"],
+			"visual-variables": ["Position", "length"],
+			"categorical-nominal": 1,
+			"quantitative": 2,
+			"description": "A floating bar chart—sometimes labeled a Gantt chart because of similarities in appearance—helps to show the range of quantitative values. It presents a bar stretching from the lowest to the highest values (therefore the starting position is not the zero point). Using such charts enables you to identify the diversity of measurements within a category and view overlaps and outliers across all categories. A Gantt chart is shown in the following screenshot:",
+			"img": "http://lyuehh-img.qiniudn.com/FoOCDBLMiS2wxUBPDEOt-vOP_VTN"
+		},
+		{
+			"name": "Pixelated bar chart",
+			"alt-name": [],
+			"visual-variables": ["Height", "color-hue", "symbol"],
+			"categorical": "Multiple",
+			"quantitative": 1,
+			"description": "The proposed name of pixelated bar chart is more an intuitive description than an established type. These charts provide a dual layer of resolution: a global view of a bar chart (showing aggregate totals) and a local view of the detail that sits beneath the aggregates (demonstrated by the pixels shown within each bar). Typically, these charts are interactive and offer an ability to hover over or click on the constituent pixels/symbols to learn about the stories at this more detailed resolution.",
+			"img": "http://lyuehh-img.qiniudn.com/FkWolhNziqmqenyBy37y4edtmG4B"
+		},
+		{
+			"name": "Histogram",
+			"alt-name": [],
+			"visual-variables": ["Height", "width"],
+			"quantitative-interval": 1,
+			"quantitative-ratio": 1,
+			"description": "Histograms are often mistaken for bar charts but there are important differences. Histograms show distribution through the frequency of quantitative values (y axis) against defined intervals of quantitative values(x axis). By contrast, bar charts facilitate comparison of categorical values. One of the distinguishing features of a histogram is the lack of gaps between the bars, as shown in the following image",
+			"img": "http://lyuehh-img.qiniudn.com/Fm4OW47eW66Wyu9QERnw7UyJ_AZL"
+		},
+		{
+			"name": "Slopegraph",
+			"alt-name": ["bumps chart", "table chart"],
+			"visual-variables": ["Position", "connection", "color-hue"],
+			"categorical": 1,
+			"quantitative": 2,
+			"description": "A slopegraph creates an effective option for comparing two (or more) sets of quantitative values when they are associated with the same categorical value. They especially provide a neat way of showing a before and after view or comparison of two different points in time. In the following example, we see the total points won for teams in the English Premier League across two comparable seasons. The layout creates a combined view of rank and absolute value based on position on the vertical axis, with a link joining the associated values to highlight the transitional change. Color can be used to further emphasize upward or downward changes:",
+			"img": "http://lyuehh-img.qiniudn.com/Fmu5_YdkDRPuTOEqzIUnrpDriajm"
+		},
+		{
+			"name": "Radial chart",
+			"alt-name": [],
+			"visual-variables": ["Position", "color-hue", "color-saturation/lightness", "texture"],
+			"categorical": "Multiple",
+			"categorical-ordinal": 1,
+			"description": "A radial chart displays data around a concentric, circular layout. The example shown in the following image shows the status status across a number of different categorical measures relating to gay rights for each state in the U.S., arranged to indicate approximate geographical relationships. A slight visual shortcoming associated with a radial chart is the fractionally distorted prominence of the segments on the outside rings which end up being larger (due to arc length) than those on the inside. Often radial charts are used for showing data over time but this only works when the sequence is continuous (such as a 24 hour clock).",
+			"img": "http://lyuehh-img.qiniudn.com/FjDaALewcVtfNrRY-n-yKuz-fhEj"
+		},
+		{
+			"name": "Glyph chart",
+			"alt-name": [],
+			"visual-variables": ["Shape", "size", "position", "color-hue"],
+			"categorical": "Multiple",
+			"quantitative": "Multiple",
+			"description": "A glyph chart is based on a shape (in the following example, a flower) being the main artifact of representation. The physical properties of the shape (through a feature such as a petal) represent different categorical variables; they are sized according to the associated quantitative value and distinguished through color. While absolute magnitude judgments are not easily achieved nor intended, the hierarchy of the data (big, medium, and small values) is possible to interpret and the typical deployment of interactivity enables further exploration.",
+			"img": "http://lyuehh-img.qiniudn.com/FiHo9cu_vzXJWYelyDmPN32MpmUk"
+		},
+		{
+			"name": "Sankey diagram",
+			"alt-name": [],
+			"visual-variables": ["Height", "position", "link", "width", "color-hue"],
+			"categorical": "Multiple",
+			"quantitative": "Multiple",
+			"description": "Sankey diagrams are used to convey the idea of flow. They portray constituent quantities of a series of associated categorical values, across a number of stages, with the ongoing associations represented by connecting bands. The width of these links indicates the proportional flow from one stage to another. They are useful for showing situations where elements transform and divide over key events, as shown here displaying the breakdown of different fuels, how they are transformed and then ultimately used.",
+			"img": "http://lyuehh-img.qiniudn.com/FmXBCu3ztOvgYkPl-OmXuzkkN_q2"
+		},
+		{
+			"name": "Area size chart",
+			"alt-name": [],
+			"visual-variables": ["Area", "color-hue"],
+			"categorical": 1,
+			"quantitative-ratio": 1,
+			"description": "This type of chart doesn't have an obvious name, so Area size chart is a best attempt! It is a very simple visual device that deploys the visual variable of area—normally a rectangle or circle—to compare two (or maybe several) values. Normally these values will vary in size quite dramatically to convey a certain shock at the disparity. The subject matter may relate to a part-of-a-whole comparison (portion judgment) but more typically involves separate, independent categories (comparative judgment).",
+			"img": "http://lyuehh-img.qiniudn.com/Fgk5hs4bAttjByVOBxw1CEc2A4T8"
+		},
+		{
+			"name": "Small multiples",
+			"alt-name": ["trellis chart"],
+			"visual-variables": ["Position", "any visual variable"],
+			"categorical": "Multiple",
+			"quantitative": "Multiple",
+			"description": "Small multiples are not really a separate chart type but an arrangement approach that facilitates efficient and effective comparisons to be made across a multipanel display of small chart elements. These displays exploit the capacity of our visual system to rapidly scan across a trellis of small similar charts and to be capable of easily and immediately spotting patterns. These are particularly useful for comparing categories that have a broad range of values. They also work very well for showing snapshots of events that change over time. One of the earliest examples of this approach was The Horse in Motion by Eadweard Muybridge to show the different stages of a horse's movement over a time frame-by-frame. A trellis chart is shown in the following image:",
+			"img": "http://lyuehh-img.qiniudn.com/FpAJgTZM3vMQIGmW2SyenDwwNBRo"
+		},
+		{
+			"name": "Word cloud",
+			"alt-name": [],
+			"visual-variables": ["Size"],
+			"categorical": 1,
+			"quantitative-ratio": 1,
+			"description": "Word clouds depict the frequency of words used in a given set of text. The font size indicates the quantity of each word's usage. Color is often just used as decoration (which you'll notice actually distorts the visual prominence). While it's fair to say they are becoming something of a ubiquitous visual commodity, they can be useful for exploring datasets for the first time in order to identify key terms being used. If you feel compelled to use word clouds, the best advice is to ensure the underlying text being used is carefully prepared in advance to reduce the noise. A word cloud is shown here:",
+			"img": "http://lyuehh-img.qiniudn.com/Fnm_i5f9hdXOfZJdMPdo3KyyA-Av"
+		}
+		]
+	},
+	{
+		"name": "Assessing hierarchies and part-to-whole relationships",
+		"description": "To provide a breakdown of categorical values in their relationship to a population of values or as constituent elements of hierarchical structures. The example here would be the pie chart.",
+		"charts": [
+		{
+			"name": "Pie chart",
+			"alt-name": [],
+			"visual-variables": ["Angle", "area", "color-hue"],
+			"categorical": 1,
+			"quantitative-ratio": 1,
+			"quantitative-ratio": 0,
+			"description": "Pie charts are probably the most contentious chart type and attract much negative sentiment. While we know it is harder to accurately interpret angles and judge the area of segments compared to other visual variables, the negativity is arguably more a reflection of their relentless misuse. The inclusion of too many categories and colors, 3D decoration, and poorly executed arrangement are often to blame for this. Usually, a simple bar chart will suffice to demonstrate the part-to-whole relationship. However, if you are determined to use a pie chart, always start the first slice from the vertical position (to establish a sense of baseline), minimize the number of categories being displayed (ideally maximum of three), and arrange the segments as logically as possible. Variations include the donut chart, which is essentially the same chart but with the center removed (to accommodate labels or nested donut charts).",
+			"img": "http://lyuehh-img.qiniudn.com/Foyqs9PgHGkbBk8WJEeCSMLwgr2i"
+		},
+		{
+			"name": "Stacked bar chart",
+			"alt-name": ["stacked column chart"],
+			"visual-variables": ["Length", "color-hue", "position", "color-saturation/lightness"],
+			"categorical": 2,
+			"quantitative-ratio": 1,
+			"description": "Stacked bars are fairly self-explanatory. They can be based on the stacks of absolute values or standardized to show part of a whole breakdown, as in following example. Colors and position differentiate the value categories. Where the categorical values are ordinal in nature, it helps to sequence the values logically, for example when you have sentiment data such as the Likert scale of disagree (reds) through to agree (blues). This sequencing helps draw out the contrasting composition of the sentiment from all categories. The only drawback of a stacked chart is the difficulty in being able to accurate read bar lengths, as there is no common baseline.",
+			"img": "http://lyuehh-img.qiniudn.com/Fmhy58KkFLNrXoELw6AO-IxlAdBU"
+		},
+		{
+			"name": "Square pie",
+			"alt-name": ["unit chart", "waffle chart"],
+			"visual-variables": ["Position", "color-hue", "symbol"],
+			"categorical": 1,
+			"quantitative-ratio": 1,
+			"description": "There are several titles for this type of chart but the common technique involves a grid of units (may be squares or symbols) to represent parts of a whole. This may be for a percentage comparison (square pie) or an absolute quantity (unit chart, waffle chart). The use of color and symbol establishes the visual composition of the categorical and quantitative values. An example is shown here:",
+			"img": "http://lyuehh-img.qiniudn.com/FrRJ3hzcGj5mPWyRJz6ScSiH1vjS"
+		},
+		{
+			"name": "Tree map",
+			"alt-name": [],
+			"visual-variables": ["Area", "position", "color-hue", "color-saturation/lightness"],
+			"categorical-nominal": "Multiple",
+			"quantitative-ratio": 1,
+			"description": "Tree maps take the concept of a whole population and divide up portions of rectangular spaces within to represent organized, clustered constituent units sized according to their relative value. As well as arrangement, various properties of color are typically used to provide additional layers of quantitative or categorical insight. Here is an example:",
+			"img": "http://lyuehh-img.qiniudn.com/Fq9DwtVXP7XxdFn4y7WV0O3XRcXg"
+		},
+		{
+			"name": "Circle packing diagram",
+			"alt-name": [],
+			"visual-variables": ["Area", "color-hue", "position"],
+			"categorical": 2,
+			"quantitative-ratio": 1,
+			"description": "As the title suggests, this type of chart seeks to pack together constituent circles into an overall circular layout that represents the whole. Each individual circle represents a different category and is sized according to the associated quantitative value. Other visual variables, such as color and position, are often incorporated to enhance the layers of meaning of the display. Note that you can't tessellate circles and so the combined view never creates a perfect fit (there are always gaps). The algorithms used to form the arrangement will often utilize certain overlapping properties to maintain the accuracy of the respective part-to-whole area sizes.",
+			"img": "http://lyuehh-img.qiniudn.com/FnnYQzL3CpwxGnIjPcd6WCSIDjqc"
+		},
+		{
+			"name": "Bubble hierarchy",
+			"alt-name": [],
+			"visual-variables": ["Area", "position", "color-hue"],
+			"categorical": "Multiple",
+			"quantitative-ratio": 1,
+			"description": "This technique is used to portray organization and structure through a hierarchical display. In the following example, we see the use of circles to represent the constituent departments, sized according to their quantitative value and colored to visually distinguish the different departments.",
+			"img": "http://lyuehh-img.qiniudn.com/FgksZz1MmgMhKBfW_510xii_7krs"
+		},
+		{
+			"name": "Tree hierarchy",
+			"alt-name": [],
+			"visual-variables": ["Angle/area", "position", "color-hue"],
+			"categorical": 2,
+			"quantitative-ratio": 1,
+			"description": "Similar to the bubble hierarchy, this technique presents the organization and structure of data through a hierarchical tree network. In the following example, portraying the structure of a book, the effect is quite abstract but every visual property is serving the purpose of representing just the data - the quantitiative properties and hierarchical arrangement of all the book's elements:",
+			"img": "http://lyuehh-img.qiniudn.com/FmvKXthDxFuYwGFJPLIcs1LFd2yY"
+		}
+	]
+	},
+	{
+		"name": "Showing changes over time",
+		"description": "To exploit temporal data and show the changing trends and patterns of values over a continuous timeframe. A typical example is the line chart.",
+		"charts": [
+		{
+			"name": "Line chart",
+			"alt-name": [],
+			"visual-variables": ["Position", "slope", "color-hue"],
+			"quantitative-interval": 1,
+			"categorical": 1,
+			"quantitative-ratio": 1,
+			"description": "Line charts are something we should all be familiar with. They are used to compare a continuous quantitative variable on the x axis and the size of values on the y axis. The vertical points are joined up using lines to show the shifting trajectory through the resulting slopes. Line charts can help unlock powerful stories of the relative or (maybe) related transition of categorical values. Unlike bar charts, the y axis doesn't need to start from zero because we are looking at the relative pattern of the data journey.",
+			"img": "http://lyuehh-img.qiniudn.com/FgvOXMwTf04g5k51ErnZvcCtcIlU"
+		},
+		{
+			"name": "Sparklines",
+			"alt-name": [],
+			"visual-variables": ["Position", "slope"],
+			"quantitative-interval": 1,
+			"quantitative-ratio": 1,
+			"description": "Sparklines aren't necessarily a variation on the line chart, rather, a clever use of them. They were conceived by Edward Tufte and are described as intense, word-sized graphics. They take advantage of our visual perception capabilities to discriminate changes even at such a low resolution in terms of size. They facilitate opportunities to construct particularly dense visual displays of data in small space and so are particularly applicable for use on dashboards.  An example is shown here:",
+			"img": "http://lyuehh-img.qiniudn.com/FlDOUr2JZ1Jviv51Lf1BETmiupgu"
+		},
+		{
+			"name": "Area chart",
+			"alt-name": [],
+			"visual-variables": ["Height", "slope", "area", "color-hue"],
+			"quantitative-interval": 1,
+			"categorical": 1,
+			"quantitative-ratio": 1,
+			"description": "As you can see in the following example, a number of visual properties are involved in area charts. The vertical position and connecting slope of the horizon (like a line chart) shows the progression of the values over time and the color area underneath the chart helps to emphasize these changes. Unlike a standard line chart, an area chart should have the y axis starting at zero to ensure the area judgment is being interpreted accurately.",
+			"img": "http://lyuehh-img.qiniudn.com/Fpq-xHvO-7Pw4ohBozmJiGasoQLE"
+		},
+		{
+			"name": "Horizon chart",
+			"alt-name": [],
+			"visual-variables": ["Height", "slope", "area", "color-hue", "color-saturation/lightness"],
+			"quantitative-interval": 1,
+			"categorical": 1,
+			"quantitative-ratio": 2,
+			"description": "This is a variation on the area chart, modified to include (and cope with) both positive and negative values. Rather than presenting negative values beneath the x axis, the negative area is mirrored on to the positive side and then colored differently to indicate its negative polarity. The result is a chart that occupies a single row of space, which helps to accommodate multiple stories onto a single display and facilitates comparison to pick out local and global patterns of change over time.",
+			"img": "http://lyuehh-img.qiniudn.com/FtgLaqhHdc6kpkEp29xSTKP0E-_5"
+		},
+		{
+			"name": "Stacked area chart",
+			"alt-name": [],
+			"visual-variables": ["Height", "area", "color-hue"],
+			"quantitative-interval": 1,
+			"categorical": 1,
+			"quantitative-ratio": 1,
+			"description": "A stacked area chart provides a compositional view of categories to show their changes over time. As the title suggests, these are based on stacks of area charts differentiated by color and present either absolute aggregates or percentage aggregates. Note that the quantitative values are represented by the height (derived from top and bottom positions) of the area stacks at any given point. Sometimes the resulting shapes of the middle sections can be slightly misleading and misinterpreted due to the lack of a common baseline position.",
+			"img": "http://lyuehh-img.qiniudn.com/FijBJEQ6NpjcQlSPDYT6bOFC-KA7"
+		},
+		{
+			"name": "Stream graph",
+			"alt-name": [],
+			"visual-variables": ["Height", "area", "color-hue"],
+			"quantitative-interval": 1,
+			"categorical": 1,
+			"quantitative-ratio": 1,
+			"description": "The stream graph operates in a similar fashion to a stacked area chart, allowing multiple values series to be layered as streams of area with quantitative values expressed through the height of the individual stream at any given time.  It has no baseline x axis and so there is no concept of negative or positive values, purely aggregates. Its functional purpose is really to highlight peaks and troughs—it has a particularly organic feel and is suited to displays intended to show ebb and flow stories. Many stream graphs will offer interactivity to allow you to explore and isolate individual layers. An example is shown in the following screenshot:",
+			"img": "http://lyuehh-img.qiniudn.com/FrBefg4qa-5PATymZt66QSUcLTrL"
+		},
+		{
+			"name": "Candlestick chart",
+			"alt-name": ["box", "whiskers plot", "OHLC chart"],
+			"visual-variables": ["Position", "height", "color-hue"],
+			"quantitative-interval": 1,
+			"quantitative-ratio": 1,
+			"description": "The candlestick chart is commonly used in financial contexts to reveal the key statistics about a stock market for a given timeframe (often daily). In the following example, we see stock market changes by day based on the OHLC measures—opening, highest, lowest, and closing prices. The height of the central bar indicates the change from the opening to closing price and the color tells us if this is an increase or decrease. This is a chart that clearly requires a certain amount of experiential learning in order to read it efficiently. However, one you've achieved this you will see how extremely dense and powerful these displays are. They are similar in concept to the box and whiskers plot, which focus on the statistical distribution of a set of values (showing upper and lower quartiles as well as the median).",
+			"img": "http://lyuehh-img.qiniudn.com/Fhl3Zw-wWlWUyOrMiQ51RzP7upX7"
+		},
+		{
+			"name": "Barcode chart",
+			"alt-name": [],
+			"visual-variables": ["Position", "symbol", "color-hue"],
+			"categorical": 3,
+			"quantitative-interval": 1,
+			"description": "These are very compact displays that depict a sequence of events or milestones over the course of time using a combination of symbols and color. In the following example, we see the key events during two football matches. Demonstrating similar qualities to those of a sparkline, barcode charts (named because they look like barcodes, funnily enough) convey a significant amount of data packed into a small space. Once again, as you familiarize yourself with how to read these charts, they do unlock a terrific amount of narrative.",
+			"img": "http://lyuehh-img.qiniudn.com/FkbPN0qP_Pyfoeej3pZons_hc26z"
+		},
+		{
+			"name": "Flow map",
+			"alt-name": [],
+			"visual-variables": ["Position", "height/width", "color-hue"],
+			"quantitative-interval": "Multiple",
+			"categorical": 1,
+			"quantitative-ratio": 1,
+			"description": "Similar in many ways to the Sankey diagram, a flow map portrays the flow of a quantitative value as it is transformed over time and/or space. In this famous example, showing the march of Napoleon's army in the Russian campaign of 1812, the thickness of the main band indicates the size of the army as it moves over time and geography towards Moscow. The geographical accuracy of the plot is preserved in this chart but we don't see (or need to see) the full map detail. Notice too that the freezing temperatures are presented in the line chart below the main display, providing a further layer of the detail behind this story:",
+			"img": "http://lyuehh-img.qiniudn.com/Fvz9zwG8szNoGP-O2n3B90GSM3N4"
+		}
+	]
+	},
+	{
+		"name": "Plotting connections and relationships",
+		"description": "To assess the associations, distributions, and patterns that exists between multivariate datasets. This collection of solutions reflects some of the most complex visual solutions and usually focuses on facilitating exploratory analysis. A common example would be the scatter plot.",
+		"charts": [
+		{
+			"name": "Scatter plot",
+			"alt-name": [],
+			"visual-variables": ["Position", "color-hue"],
+			"quantitative": 2,
+			"description": "A scatter plot is a combination of two quantitative variables plotted on to the x and y axes in order to reveal patterns of correlations, clustering, and outliers. This is a very important chart type, in particular, for when we are familiarizing with and exploring a dataset. An sample scatter plot is shown in the following image:",
+			"img": "http://lyuehh-img.qiniudn.com/Ftd5LqNw5d3k1gEqhFr68bKsAi-M"
+		},
+		{
+			"name": "Bubble plot",
+			"alt-name": [],
+			"visual-variables": ["Position", "area", "color-hue"],
+			"categorical": 2,
+			"quantitative": 2,
+			"description": "A bubble plot extends the potential of a scatter plot through multiple encoding of the data mark. In the following example, we see the marks becoming circles of varying size and then colored according to their categorical relationship. Often, you will see a further layer of time-based data applied to convey motion with the plot animated over time.",
+			"img": "http://lyuehh-img.qiniudn.com/Fsxrk2yA1Y95pdasl5lp5p4KO5wp"
+		},
+		{
+			"name": "Scatter plot matrix",
+			"alt-name": [],
+			"visual-variables": ["Position", "color-hue"],
+			"categorical": 2,
+			"quantitative": 2,
+			"description": "Similar to the small multiples chart that we saw earlier, a scatter plot matrix takes advantage of the eye's rapid capability to spot patterns across multiple views of the same type of chart. In the following case, we have a panel of multiple combined scatter plots:",
+			"img": "http://lyuehh-img.qiniudn.com/FnZBsyDdmK3HGodrFyGuaA0ESbn2"
+		},
+		{
+			"name": "Heatmap",
+			"alt-name": ["matrix chart"],
+			"visual-variables": ["Position", "color-saturation"],
+			"categorical": "Multiple",
+			"quantitative-ratio": 1,
+			"description": "With further similarities to small multiples, heatmaps enable us to perform rapid pattern matching to detect the order and hierarchy of different quantitative values across a matrix of categorical combinations. The use of a color scheme with decreasing saturation or increasing lightness helps create the sense of data magnitude ranking.",
+			"img": "http://lyuehh-img.qiniudn.com/FsMZ4rgVnjXc-Q4a-2IaMeYH0QEo"
+		},
+		{
+			"name": "Parallel sets",
+			"alt-name": ["parallel coordinates"],
+			"visual-variables": ["Position", "width", "link", "color-hue"],
+			"categorical": "Multiple",
+			"quantitative-ratio": "Multiple",
+			"description": "Parallel sets offer a unique way of visually exploring and analyzing datasets. The technique involves plotting all your data on to a series of axes, one for each of the variables you are interested in examining. This creates pathways that show the connections between the breakdown of values contained within your data for each variable. They are useful for learning about the potential correlations and consistencies that exist in our datasets. You'll notice certain similarities with the function of Sankey diagrams.",
+			"img": "http://lyuehh-img.qiniudn.com/FgWiBVEya7KQjkK3xV3acK46z5JZ"
+		},
+		{
+			"name": "Radial network",
+			"alt-name": ["chord diagram"],
+			"visual-variables": ["Position", "connection", "width", "color-hue", "color-lightness", "symbol", "size"],
+			"categorical": "Multiple",
+			"quantitative-ratio": 2,
+			"description": "A radial network or chord diagram creates a framework for comparing complex relationships between categorical values. The use of a radial layout offers the opportunity to move beyond the restrictions of an x and y axis pairing. The key explanatory property is the connections that exist between components, sometimes sized (thickness) and colored to incorporate extra layers of detail. In the following example, we see additional levels of detail represented by the encoded size of text and icons. One thing to note is that the length (and therefore prominence) of a line can slightly mislead by inferring significance (a more important relationship) when it is simply a by-product of the arrangement around the radial layout.",
+			"img": "http://lyuehh-img.qiniudn.com/FqX-TYFrzGjJto3kAYwDSUOP5KzQ"
+		},
+		{
+			"name": "Network diagram",
+			"alt-name": ["force-directed", "node-link network"],
+			"visual-variables": ["Position", "connection", "area", "color-hue"],
+			"categorical-nominal": "Multiple",
+			"quantitative-ratio": 1,
+			"description": "At first glance, network diagrams, similar to the one shown in the following example, can look quite daunting through their visual complexity and apparent clutter (indeed, often they are described as hairballs). Their intention and value is to facilitate exploration of complex data frameworks based on the existence or quantifiable strength of relationships, connections, and logical organization. The typical purpose of these graphs is to enable the viewer to get a sense of patterns—picking out the elements that are of interest, observing clusters and gaps, dominant nodes and sparse connections. There are many derivatives of network diagrams with variations influenced by the data being used as well as the imagination and technical capabilities of the designer.",
+			"img": "http://lyuehh-img.qiniudn.com/Fs-PbCYbIUNqVs-7SgvK4iKz1-19"
+		}
+	]
+	},
+	{
+		"name": "Mapping geo-spatial data",
+		"description": "To plot and present datasets with geo-spatial properties via the many different mapping frameworks. A popular approach would be the choropleth map.",
+		"charts": [
+		{
+			"name": "Choropleth map",
+			"alt-name": [],
+			"visual-variables": ["Position", "color-saturation/lightness"],
+			"quantitative-interval": 2,
+			"quantitative-ratio": 1,
+			"description": "As described in the previous chapter, choropleth maps color the constituent geographic units (such as states or counties) based on quantitative values using a sequential or diverging scheme of saturation/lightness. While these are popular techniques, there is a recognized shortcoming caused by the fact that populations are not uniformly distributed. There is a potential distorting effect created by the prominence of larger geographic areas which may not be proportionately representative of the population of data. Make sure you choose your color classifications carefully to ensure you accurately represent the chronological prominence of increasing quantities. An example of a choropleth map is shown in the following screenshot:",
+			"img": "http://lyuehh-img.qiniudn.com/Fm0Wjyv2vo-DORcLyl8NYVEyFqsD"
+		},
+		{
+			"name": "Dot plot map",
+			"alt-name": [],
+			"visual-variables": ["Position."],
+			"quantitative-ratio": 2,
+			"description": "A dot plot map essentially displays a geographical scatter plot of records, combining the longitude and latitude to position marks on the map. In the following example, we also see this data being gradually plotted over time to reveal a story of geographical spread:",
+			"img": "http://lyuehh-img.qiniudn.com/FtIIwCeu2YCIhfdoKfjysGTnFpuP"
+		},
+		{
+			"name": "Bubble plot map",
+			"alt-name": [],
+			"visual-variables": ["Position", "area", "color-hue"],
+			"quantitative-interval": 2,
+			"categorical-nominal": 1,
+			"quantitative-ratio": 1,
+			"description": "This type of mapping plots differently-sized circular markers over given geographical coordinates to indicate the magnitude of a quantitative value. Whereas the dot plot maps were like geographical scatter plots, these are essentially bubble charts overlayed on to a map. The main contention with these designs tend to be that the spread of bubbles, depending on their size, can reach far beyond their geographical point and end up bleeding into other circles. Normally, the colors used include a relatively high transparency setting in order to accommodate the potential overlaps and halos are often used to distinguish outer edges. An example of a bubble plot map is shown in the following screenshot:",
+			"img": "http://lyuehh-img.qiniudn.com/Fiv3vzhuN2_wGC-fKzYpCsGmMIv8"
+		},
+		{
+			"name": "Isarithmic map",
+			"alt-name": ["contour map", "topological map"],
+			"visual-variables": ["Position", "color-hue", "color-saturation", "color-darkness"],
+			"categorical": "Multiple",
+			"quantitative": "Multiple",
+			"description": "This is a technique for overcoming the flaws associated with the choropleth map and involves combining color-hue (to represent a political party), with color saturation (to represent the dominance of party persuasion), with a final dimension of color-darkness to represent the density of population. Algorithms are applied to help smooth the representation through the contour effect and this creates an elegant end result; as shown here:",
+			"img": "http://lyuehh-img.qiniudn.com/FtbTIXdsTc-oOVtD9QD9QsYWjasT"
+		},
+		{
+			"name": "Particle flow map",
+			"alt-name": [],
+			"visual-variables": ["Position", "direction", "thickness", "speed"],
+			"quantitative": "Multiple",
+			"description": "A particle flow map uses animation to portray the motion of data across geography and over time. In the following example, we see the motion of the currents that drive the world's oceans. These careful and highly sophisticated constructions combine multiple variables of location, size, speed, and direction to create a compelling design that perfectly captures the nature of the subject matter.",
+			"img": "http://lyuehh-img.qiniudn.com/FnUwUUr1E6JGteNROD89wj3l_Cg9"
+		},
+		{
+			"name": "Cartogram",
+			"alt-name": [],
+			"visual-variables": ["Position", "size"],
+			"quantitative-interval": 2,
+			"quantitative-ratio": 1,
+			"description": "Where a choropleth map takes a location and gives it a shade of color to represent a value, a cartogram takes a location and resizes the geographic shape to represent a value. The result is a distorted and skewed view of reality in the form of a reconfigured atlas. As with many of the chart types outlined here, the purpose is not to enable exact readings, rather to highlight the highly inflated, deflated, and unchanged shapes and sizes. They do rely on a certain predeveloped familiarity of (for example) a country's position, its shape, and its size. The most effective deployment of such charts tends to be when they are interactive and you can unlock all the benefits of exploratory analysis. An example is given here:",
+			"img": "http://lyuehh-img.qiniudn.com/Fu7-v5VeXCRSMfcKAn40lx6wAuTS"
+		},
+		{
+			"name": "Dorling cartogram",
+			"alt-name": [],
+			"visual-variables": ["Position", "size", "color-hue"],
+			"categorical": 2,
+			"quantitative-ratio": 1,
+			"description": "A Dorling cartogram (named after Professor Danny Dorling who invented them) deploys a uniform shape (typically a circle) to represent a geographical location and then sizes this according to a quantitative variable. In the following example, we see a portrayal of countries represented by circles, sized according to that country's CO2 emissions and colored to distinguish the continents. As before, we may struggle to easily identify places that have now been transformed in shape, size, and position but effective annotation can generally compensate for that.",
+			"img": "http://lyuehh-img.qiniudn.com/Fo1G2_jd-uBBdekswYltgvea5gkV"
+		},
+		{
+			"name": "Network connection map",
+			"alt-name": [],
+			"visual-variables": ["Position", "link", "color-hue"],
+			"quantitative-interval": 2,
+			"categorical-nominal": 1,
+			"description": "Similar to the network diagram that we saw before, the intention of a network connection map is to facilitate the exploration of complex geographical connections. A connection map joins up related locations to form a pattern that enables discovery of hubs, overlaps, clusters, and gaps—pretty much the same focus as that of the network diagram but this time with the platform of geographical coordinates. The exhaustiveness of certain datasets means an image of the atlas is almost fully formed from the resulting patterns and there is no need for the actual mapping layer to be visible. In the following image, we see the world's flight paths with those involving Toronto highlighted in orange.",
+			"img": "http://lyuehh-img.qiniudn.com/Fgk0-wQBQaNrnyi9f5BNiPXj-r26"
+		}
+	]
+	}
+]
