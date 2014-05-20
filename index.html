@@ -9,26 +9,75 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container" ng-controller="MainController">
-		<div class="row">
-			<h2>Data Visualization Methods</h2>
+	<header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+		<div class="container">
+			<div class="navbar-header">
+				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="../" class="navbar-brand">Bootstrap</a>
+			</div>
+			<nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+				<ul class="nav navbar-nav">
+					<li class="active">
+						<a href="../getting-started">起步</a>
+					</li>
+					<li>
+						<a href="../css">CSS</a>
+					</li>
+					<li>
+						<a href="../components">组件</a>
+					</li>
+					<li>
+						<a href="../javascript">JavaScript插件</a>
+					</li>
+					<li>
+						<a href="../customize">定制</a>
+					</li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a href="../about">关于</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div class="bs-header" id="content">
+		<div class="container">
+			<h1>Data Visualization Methods</h1>
 			<span>form here</span>
 		</div>
+	</div>
+    <div class="container" ng-controller="MainController">
         <div class="row">
-			<div class="classification" ng-repeat="d in data">
-				<h3>{{ d.name }}</h3>
-				<p>{{ d.description }}</p>
-				<h4>Charts: </h4>
-				<ul>
-					<li ng-repeat="c in d.charts"><a href="#{{ c.name }}">{{ c.name }}</a></li>
-				</ul>
-				<div class="chart" ng-repeat="c in d.charts">
-					<h4 id="{{ c.name }}"><strong>Name</strong>: {{ c.name }}</h4>
-					<span ng-show="c['alt-name'].length != 0"><strong>Other name</strong>: {{ c['alt-name'].join(", ") }}</span>
-					<h5><strong>Visual Variables</strong>: {{ c['visual-variables'].join(', ') }}</h5>
-					<p><strong>Description</strong>: {{ c.description }}</p>
-					<img ng-src="{{ c.img }}" />
+			<div class="col-md-3">
+				<div class="bs-sidebar hidden-print" role="complementary" data-spy="affix" data-offset-top="270">
+					<ul class="nav bs-sidenav">
+						<li ng-repeat="d in data" class="">
+							<a href="#{{d.name}}">{{ d.name }}</a>
+							<ul class="nav">
+								<li ng-repeat="c in d.charts"><a href="#{{ c.name }}">{{ c.name }}</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-9" role="main">
+				<div class="classification" ng-repeat="d in data">
+					<h3>{{ d.name }}</h3>
+					<p id="{{ d.name }}">{{ d.description }}</p>
+					<div class="chart" ng-repeat="c in d.charts">
+						<h4><strong>Name</strong>: {{ c.name }}</h4>
+						<span ng-show="c['alt-name'].length != 0"><strong>Other name</strong>: {{ c['alt-name'].join(", ") }}</span>
+						<h5><strong>Visual Variables</strong>: {{ c['visual-variables'].join(', ') }}</h5>
+						<p id="{{ c.name }}"><strong>Description</strong>: {{ c.description }}</p>
+						<img ng-src="{{ c.img }}" />
 
+					</div>
 				</div>
 			</div>
 		</div>
